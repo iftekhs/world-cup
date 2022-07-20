@@ -95,6 +95,9 @@ body {
 .hero-left {
   margin-top: 8rem;
   padding-bottom: 10px;
+  animation: fadeAnimation 600ms ease-in-out 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .hero-heading {
@@ -126,16 +129,16 @@ body {
 
 .hero-img {
   height: 613px;
-  animation: blinkAnimation 100ms 3 linear;
+  animation: fadeAnimation 600ms ease-in-out 600ms 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
-@keyframes blinkAnimation {
+@keyframes fadeAnimation {
   0% {
-    opacity: 1;
-  }
-  50% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
