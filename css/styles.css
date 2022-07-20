@@ -126,9 +126,6 @@ body {
 
 .hero-img {
   height: 613px;
-}
-
-.hero-container:hover .hero-img {
   animation: blinkAnimation 100ms 3 linear;
 }
 
