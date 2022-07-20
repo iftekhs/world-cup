@@ -1,15 +1,8 @@
 /*---------- VARIABLES ----------*/
-/* #161616  main*/
-/* #212529  text*/
-/* #dd0000 */
-
-/* #0f172a */
-/* #10b981 */
 :root {
   /* Colors */
   --main-color: #0f172a;
   --second-color: #10b981;
-  --main-text-color: #212529;
 
   /* Font Weight */
   --normal-weight: 400;
@@ -40,7 +33,7 @@ html {
 body {
   line-height: 1;
   font-weight: var(--normal-weight);
-  color: var(--main-text-color);
+  color: var(--main-color);
   min-height: 100vh;
 }
 
@@ -181,7 +174,7 @@ body {
 .link:visited {
   display: block;
   background-color: #fff;
-  color: var(--main-text-color);
+  color: var(--main-color);
   text-decoration: none;
   text-align: center;
   font-size: 2rem;
@@ -229,7 +222,7 @@ body {
   font-weight: 500;
   padding: 6px 0;
   text-align: center;
-  border: 1px solid #161616;
+  border: 1px solid var(--main-color);
   border-radius: 5px;
   margin: 15px 0;
 }
@@ -250,7 +243,7 @@ body {
   align-items: center;
   font-size: 1.6rem;
   gap: 1rem;
-  color: #161616;
+  color: var(--main-color);
 }
 
 .info img {
@@ -291,7 +284,7 @@ body {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #161616;
+  color: var(--main-color);
 }
 
 .match-time {
@@ -473,6 +466,7 @@ body {
     justify-content: center;
     text-align: center;
     padding: 4rem 4rem 0;
+    gap: 1rem;
   }
 
   .aside-nav {
